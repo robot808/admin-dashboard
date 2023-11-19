@@ -8,3 +8,25 @@ html,
 body {
   height: 100%;
 }
+
+body {
+  display: grid;
+  grid-template: "nav header" 1fr
+                 "nav main"   5fr
+                / 1fr 4fr;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(33, 142, 209);
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(225, 231, 239);
+}
