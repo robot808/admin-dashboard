@@ -25,17 +25,38 @@ header {
 
 nav {
   grid-area: nav;
-  padding: 20px;
   background-color: rgb(33, 142, 209);
   color: rgb(255, 255, 255);
   display: grid;
-  justify-content: center;
+  justify-content: start;
   align-content: start;
-  gap: 40px;
+  gap: 20px;
 }
 
+nav > div,
 nav li {
   margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+nav > div > img {
+  height: 48px;
+  width: auto;
+  margin: 0;
+}
+
+nav h1 {
+  font-size: 1.75rem;
+}
+
+nav img {
+  height: 24px;
+  width: auto;
+  margin: 5px 10px;
 }
 
 nav a {
