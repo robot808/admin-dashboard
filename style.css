@@ -98,7 +98,99 @@ body {
 
 header {
   grid-area: header;
+  padding: 1rem 3rem;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: grid;
+  grid-template: auto auto / 1fr auto;
+  align-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header > form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+header > form img,
+header a > img {
+  height: 1.5rem;
+  width: auto;
+}
+
+header > form button,
+header > form input[type="text"] {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+header > form input[type="text"] {
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  background-color: rgb(225, 231, 239);
+}
+
+header > div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header > div:nth-child(2) > a {
+  height: 1.5rem;
+}
+
+header > div:nth-child(3) {
+  justify-self: start;
+}
+
+header div.profile {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgb(250, 205, 52);
+  overflow: hidden;
+}
+
+header div.profile > img {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 0.5rem;
+}
+
+header div.large {
+  height: 4rem;
+  width: 4rem;
+}
+
+header div.large > img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 0.75rem;
+}
+
+header h3 {
+  margin-right: 1rem;
+}
+
+header > div:nth-child(4) a {
+  width: 100px;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  background-color: rgb(33, 142, 209);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav {
