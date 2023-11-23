@@ -91,9 +91,9 @@ body {
 
 body {
   display: grid;
-  grid-template: "nav header" 1fr
-                 "nav main"   5fr
-                / 1fr 4fr;
+  grid-template: "nav header" auto
+                 "nav main"   1fr
+                / 290px 1fr;
 }
 
 header {
@@ -182,7 +182,7 @@ header h3 {
 }
 
 header > div:nth-child(4) a {
-  width: 100px;
+  width: 6rem;
   padding: 0.625rem;
   border-radius: 1.25rem;
   background-color: rgb(33, 142, 209);
@@ -195,45 +195,54 @@ header > div:nth-child(4) a {
 
 nav {
   grid-area: nav;
+  padding: 1rem;
   background-color: rgb(33, 142, 209);
   color: rgb(255, 255, 255);
   display: grid;
   justify-content: start;
   align-content: start;
-  gap: 20px;
+  row-gap: 2rem;
 }
 
 nav > div,
 nav li {
-  margin: 1rem;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: start;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 nav > div > img {
-  height: 48px;
+  height: 3rem;
   width: auto;
   margin: 0;
 }
 
 nav h1 {
-  font-size: 1.75rem;
+  font-size: 1.625rem;
   font-weight: bold;
 }
 
+nav ul {
+  margin: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+nav li {
+  gap: 1.5rem;
+}
+
 nav img {
-  height: 24px;
+  height: 1.5rem;
   width: auto;
-  margin: 5px 10px;
 }
 
 nav a {
   color: rgb(255, 255, 255);
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
 }
 
