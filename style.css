@@ -136,6 +136,16 @@ header > form input[type="text"] {
   background-color: rgb(225, 231, 239);
 }
 
+header > form input[type="text"]:hover {
+  border: 1px solid rgb(250, 205, 52);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+header > form input[type="text"]:focus {
+  border: 1px solid rgb(33, 142, 209);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
 header > div {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -193,6 +203,12 @@ header > div:nth-child(4) a {
   text-decoration: none;
 }
 
+header > div:nth-child(4) a:hover {
+  background-color: rgb(250, 205, 52);
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
 nav {
   grid-area: nav;
   padding: 1rem;
@@ -244,6 +260,11 @@ nav a {
   font-size: 1.25em;
   font-weight: bold;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(250, 205, 52);
+  text-decoration: underline;
 }
 
 main {
