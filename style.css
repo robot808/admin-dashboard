@@ -269,5 +269,52 @@ nav a:hover {
 
 main {
   grid-area: main;
+  padding: 1.5rem 2rem 4rem 1.5rem;
   background-color: rgb(225, 231, 239);
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 1.5rem;
+}
+
+div.main,
+div.top,
+div.bottom {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+main h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+div.card,
+div.announcements,
+div.trending {
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.card {
+  border-left: 0.5rem solid rgb(250, 205, 52);
+}
+
+div.side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+div.announcements,
+div.trending {
+  height: auto;
 }
