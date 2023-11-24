@@ -305,7 +305,28 @@ div.trending {
 }
 
 div.card {
+  padding: 1.5rem;
   border-left: 0.5rem solid rgb(250, 205, 52);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 0.25rem;
+}
+
+div.card p {
+  color: rgb(99, 99, 99);
+}
+
+div.actions {
+  justify-self: end;
+  align-self: end;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+}
+
+div.actions a,
+div.actions img {
+  height: 1.5rem;
 }
 
 div.side {
