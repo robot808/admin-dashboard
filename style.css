@@ -165,15 +165,15 @@ header > div {
   gap: 1.5rem;
 }
 
-header > div:nth-child(2) > a {
+div.profile a {
   height: 1.5rem;
 }
 
-header > div:nth-child(3) {
+div.greeting {
   justify-self: start;
 }
 
-header div.profile {
+header div.pfp {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
@@ -181,18 +181,18 @@ header div.profile {
   overflow: hidden;
 }
 
-header div.profile {
+header div.pfp {
   background-color: rgb(250, 205, 52);
 }
 
-div.profile {
+div.pfp {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
   overflow: hidden;
 }
 
-div.profile > img {
+div.pfp > img {
   height: 3rem;
   width: 3rem;
   margin-top: 0.5rem;
@@ -214,7 +214,7 @@ header h3 {
   margin-right: 1rem;
 }
 
-header > div:nth-child(4) a {
+div.buttons a {
   width: 6rem;
   padding: 0.625rem;
   border-radius: 1.25rem;
@@ -226,7 +226,7 @@ header > div:nth-child(4) a {
   text-decoration: none;
 }
 
-header > div:nth-child(4) a:hover {
+div.buttons a:hover {
   background-color: rgb(250, 205, 52);
   color: rgb(0, 0, 0);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
@@ -243,7 +243,7 @@ nav {
   row-gap: 2rem;
 }
 
-nav > div,
+div.logo,
 nav li {
   display: grid;
   grid-template-columns: auto auto;
@@ -252,7 +252,7 @@ nav li {
   gap: 1rem;
 }
 
-nav > div > img {
+div.logo > img {
   height: 3rem;
   width: auto;
   margin: 0;
@@ -411,28 +411,28 @@ div.project {
   gap: 1rem;
 }
 
-div.project:nth-child(1) > div.profile {
+div.project:nth-child(1) > div.pfp {
   background-color: rgb(223, 241, 253);
 }
 
-div.project:nth-child(2) > div.profile {
+div.project:nth-child(2) > div.pfp {
   background-color: rgb(250, 205, 52);
 }
 
-div.project:nth-child(3) > div.profile {
+div.project:nth-child(3) > div.pfp {
   background-color: rgb(162, 162, 162);
 }
 
-div.project:nth-child(4) > div.profile {
+div.project:nth-child(4) > div.pfp {
   background-color: rgb(253, 162, 172);
 }
 
-div.info > h4 {
+main div.info > h4 {
   font-size: 0.875rem;
   font-weight: normal;
 }
 
-div.info > p {
+main div.info > p {
   color: rgb(99, 99, 99);
   font-size: 0.75rem;
 }
