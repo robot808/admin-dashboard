@@ -170,7 +170,18 @@ header div.profile {
   overflow: hidden;
 }
 
-header div.profile > img {
+header div.profile {
+  background-color: rgb(250, 205, 52);
+}
+
+div.profile {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.profile > img {
   height: 3rem;
   width: 3rem;
   margin-top: 0.5rem;
@@ -338,4 +349,72 @@ div.side {
 div.announcements,
 div.trending {
   height: auto;
+  padding: 0.75rem 1.5rem;
+}
+
+div.announcements {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, auto);
+}
+
+div.announcement {
+  min-height: 5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.announcement:last-child {
+  border-bottom: none;
+}
+
+div.announcement > h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+div.announcement > p {
+  color: rgb(99, 99, 99);
+  font-size: 0.75rem;
+}
+
+div.trending {
+  padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+}
+
+div.project {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.project:nth-child(1) > div.profile {
+  background-color: rgb(223, 241, 253);
+}
+
+div.project:nth-child(2) > div.profile {
+  background-color: rgb(250, 205, 52);
+}
+
+div.project:nth-child(3) > div.profile {
+  background-color: rgb(162, 162, 162);
+}
+
+div.project:nth-child(4) > div.profile {
+  background-color: rgb(253, 162, 172);
+}
+
+div.info > h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+div.info > p {
+  color: rgb(99, 99, 99);
+  font-size: 0.75rem;
 }
